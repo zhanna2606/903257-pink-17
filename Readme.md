@@ -3,12 +3,9 @@
 * Студент: [Zhanna D](https://up.htmlacademy.ru/adaptive/17/user/903257).
 * Наставник: Егор Глебов (https://htmlacademy.ru/profile/beast).
 
----
-
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
 Полезный файл:
-
 - [Contributing.md](Contributing.md) — руководство по внесению изменений.
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
