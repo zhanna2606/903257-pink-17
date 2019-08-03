@@ -1,32 +1,51 @@
+.page-header__wrapper {
+  padding: 20px;
+  background-color: #283645;
+  border-bottom: 1px solid black;
+}
+
 .page-header__logo {
-    position: absolute;
-    content: "";
-    padding: 22px; 
+  padding: 0;
+  margin: 0;
+  fill: #ffffff;
+  
 }
 
 .page-header__logo:hover {
-  .logo__svg {
+  .logo__pink {
       fill: #d22856;
   }
 }
   
 .page-header__logo:active {
-  .logo__svg {
+  .logo__pink {
       fill: white;
       opacity: 0.3;
   }
 }
 
-.main-nav__toggle {
-    position: absolute;
-    content: "";
-    top: 19px;
-    left: 85%;
+.main-nav {
+  display: flex;
+  flex-direction: column;
 }
 
-.main-nav__toggle:hover {
+.main-nav__toggle {
+    position: absolute;
+    top: 20px;
+    left: 85%;
+    background-color: #283645;
+    border: #283645;
+}
+
+.toggle__svg {
+  fill: #ffffff;
+}
+
+.main-nav__toggle:hover,
+.main-nav__toggle:focus {
   .toggle__svg {
     fill: #d22856;
+    border: #283645;
   }
 }
   
@@ -34,20 +53,10 @@
   .toggle__svg {
     fill: #d22856;
     opacity: 0.3;
+    border: #283645;
   }
 }
-  
-.main-nav__toggle:focus {
-    border: 1px solid #e59700;
-}
 
-.main-nav {
-  display: flex;
-  flex-direction: column;
-      
-  width: 100%;
-  top: 0;
-}
 
 .main-nav__list {
   margin: 0;
@@ -55,7 +64,6 @@
 }
 
 .site-list__item-main {
-  height: 66px;
   background-color: #283645;
 }
 
@@ -96,11 +104,27 @@
 }
       
 .site-list__link:active {
+  color: white;
   opacity: 0.3;
-  color: #ffffff;
 }
       
 .site-list__link--active {
   color: #d22856;
 }
 
+.image__view {
+  background: url("../../img/bg-back-mobile@1x.jpg") center center no-repeat;
+  background-size: 100% auto;
+  min-height: 400px;
+  padding: 0;
+  margin: 0;
+}
+
+.image__view--main::before {
+  position: absolute;
+  content: "";
+  width: 258px;
+  height: 286px;
+  top: 439px;
+  background: url("../../img/iphone-hand-mobile@1x.png") no-repeat center;
+}
